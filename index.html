@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/svg+xml" href="spotify_logo_green.svg" />
+  </head>
+
+  <body>
+    <div class="containers">
+      <div class="left-box">
+        <div class="home-box">
+          <div class="logo img">
+            <img class="invert" src="logo.svg" alt="" />
+            Spotify
+          </div>
+          <ul>
+            <li>
+              <img class="invert img" src="home.svg" alt="home" />
+              Home
+            </li>
+            <li>
+              <img class="invert img" src="search.svg" alt="search" />
+              Search
+            </li>
+          </ul>
+        </div>
+
+        <div class="lib-box box-top">
+          <div class="lib-header">
+            <span>Your Library</span>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div class="lib-cards">
+            <ul>
+              <li>
+                <img src="" alt="" />
+                <div class="info">
+                  <div>Song Name</div>
+                  <div>Song Artist</div>
+                </div>
+                <div class="playnow">
+                  <span>Play Now</span>
+                  <img src="" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box-1">
+            <p>Create your first playlist</p>
+            <span>It's easy, we'll help you</span>
+            <button class="btn">Create playlist</button>
+          </div>
+
+          <div class="box-1">
+            <p>Let's find some podcasts to follow</p>
+            <span>We'll keep you updated on new episodes</span>
+            <button class="btn">Browse podcasts</button>
+          </div>
+        </div>
+
+        <div id="now-playing-card">
+          <h3>Now Playing</h3>
+          <div id="song-title">Song Title</div>
+        </div>
+
+        <div class="footer box-bottom footer">
+          <div class="footer-row">
+            <a href="https://www.spotify.com/pk-en/legal/"
+              ><span>Legal</span></a
+            >
+            <a href="https://www.spotify.com/pk-en/safetyandprivacy/"
+              ><span>Safety &amp; Privacy Center</span></a
+            >
+            <a href="https://www.spotify.com/pk-en/legal/privacy-policy/"
+              ><span>Privacy Policy</span></a
+            >
+            <a href="https://www.spotify.com/pk-en/legal/cookies-policy/"
+              ><span>Cookies</span></a
+            >
+            <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3"
+              ><span>About Ads</span></a
+            >
+          </div>
+
+          <div class="footer-row">
+            <a href="https://www.spotify.com/pk-en/accessibility/"
+              ><span>Accessibility</span></a
+            >
+            <a
+              href="https://www.spotify.com/legal/cookies-policy/"
+              target="_blank"
+              rel="noopener"
+              ><span>Cookies</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="header">
+          <div class="logos">
+            <i class="fa-solid fa-less-than"></i>
+            <i class="fa-solid fa-greater-than"></i>
+          </div>
+
+          <div class="log-page">
+            <span>Premium</span>
+            <span>Support</span>
+            <span>Download</span>
+            <span class="divider">|</span>
+            <button class="sign">Sign up</button>
+            <button class="log-btn">Log in</button>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="heading">Spotify Playists</div>
+          <div class="show">
+            <button>Show all</button>
+          </div>
+        </div>
+
+        <div class="play-box">
+          <div class="box singer">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e02d0b43791d31a569726a34064"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e02d0b43791d31a569726a34064 150w,
+                https://i.scdn.co/image/ab67616d00001e02d0b43791d31a569726a34064 300w,
+                https://i.scdn.co/image/ab67616d0000b273d0b43791d31a569726a34064 320w,
+                https://i.scdn.co/image/ab67616d0000b273d0b43791d31a569726a34064 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Solo</h2>
+            <p>Jennie</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e029bbf05dd2b04aaeabe69ad00"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e029bbf05dd2b04aaeabe69ad00 150w,
+                https://i.scdn.co/image/ab67616d00001e029bbf05dd2b04aaeabe69ad00 300w,
+                https://i.scdn.co/image/ab67616d0000b2739bbf05dd2b04aaeabe69ad00 320w,
+                https://i.scdn.co/image/ab67616d0000b2739bbf05dd2b04aaeabe69ad00 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Mann Mera</h2>
+            <p>Gajendra Verma</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8 150w,
+                https://i.scdn.co/image/ab67616d00001e0256ac7b86e090f307e218e9c8 300w,
+                https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8 320w,
+                https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>7 rings</h2>
+            <p>Ariana Grande</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e02cab73e6ac9bf4bf3c6931570"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e02cab73e6ac9bf4bf3c6931570 150w,
+                https://i.scdn.co/image/ab67616d00001e02cab73e6ac9bf4bf3c6931570 300w,
+                https://i.scdn.co/image/ab67616d0000b273cab73e6ac9bf4bf3c6931570 320w,
+                https://i.scdn.co/image/ab67616d0000b273cab73e6ac9bf4bf3c6931570 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Jeene Laga Hoon</h2>
+            <p>Atif Aslam</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3 150w,
+                https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3 300w,
+                https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3 320w,
+                https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Chahun Main Ya Naa</h2>
+            <p>Palak Muchal</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src=" aria-hidden="false" draggable="false" loading="lazy"
+            src="https://i.scdn.co/image/ab67616d00001e029afb3a8f79b493607eb48390"
+            alt="" class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju
+            _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+            srcset="https://i.scdn.co/image/ab67616d00001e029afb3a8f79b493607eb48390
+            150w,
+            https://i.scdn.co/image/ab67616d00001e029afb3a8f79b493607eb48390
+            300w,
+            https://i.scdn.co/image/ab67616d0000b2739afb3a8f79b493607eb48390
+            320w,
+            https://i.scdn.co/image/ab67616d0000b2739afb3a8f79b493607eb48390
+            640w" sizes="(min-width: 1280px) 232px, 192px">"
+            <h2>Kya sach ho tum?</h2>
+            <p>Amna Riaz</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="heading">Popular Artists</div>
+          <div class="show">
+            <button>Show all</button>
+          </div>
+        </div>
+
+        <div class="play-box">
+          <div class="box singer">
+            <img src="Img/lisa.jpg" alt="" />
+            <h2>Lisa</h2>
+            <p>Artist</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="singer box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e02e6f407c7f3a0ec98845e4431"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e02e6f407c7f3a0ec98845e4431 150w,
+                https://i.scdn.co/image/ab67616d00001e02e6f407c7f3a0ec98845e4431 300w,
+                https://i.scdn.co/image/ab67616d0000b273e6f407c7f3a0ec98845e4431 320w,
+                https://i.scdn.co/image/ab67616d0000b273e6f407c7f3a0ec98845e4431 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Justin Bieber</h2>
+            <p>Artist</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box singer">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616100005174667b1c37aac06716daa5fe92"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616100005174667b1c37aac06716daa5fe92 160w,
+                https://i.scdn.co/image/ab67616100005174667b1c37aac06716daa5fe92 320w,
+                https://i.scdn.co/image/ab6761610000e5eb667b1c37aac06716daa5fe92 320w,
+                https://i.scdn.co/image/ab6761610000e5eb667b1c37aac06716daa5fe92 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Blackpink</h2>
+            <p>Artist</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box singer">
+            <img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e029508fb7ca2eedc0d98b9139f"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e029508fb7ca2eedc0d98b9139f 150w,
+                https://i.scdn.co/image/ab67616d00001e029508fb7ca2eedc0d98b9139f 300w,
+                https://i.scdn.co/image/ab67616d0000b2739508fb7ca2eedc0d98b9139f 320w,
+                https://i.scdn.co/image/ab67616d0000b2739508fb7ca2eedc0d98b9139f 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />
+
+            <h2>Ariana Grande</h2>
+            <p>Artist</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box singer">
+            <img src="Img/rahat.jpeg" alt="" />
+            <h2>Rahet FAK</h2>
+            <p>Artist</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box singer">
+            <img src="Img/atif.jpg" alt="" />
+            <h2>Atif Aslam</h2>
+            <p>Artist</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="heading">Popular Albulms and singles</div>
+          <div class="show">
+            <button>Show all</button>
+          </div>
+        </div>
+
+        <div class="play-box">
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e02659cd4673230913b3918e0d5"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e02659cd4673230913b3918e0d5 150w,
+                https://i.scdn.co/image/ab67616d00001e02659cd4673230913b3918e0d5 300w,
+                https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5 320w,
+                https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Espresso</h2>
+            <p>Sabrina Carpenter</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e0286dfd59ed2e5299c466d5160"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ ta4ePOlmGXjBYPTd90lh Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e0286dfd59ed2e5299c466d5160 150w,
+                https://i.scdn.co/image/ab67616d00001e0286dfd59ed2e5299c466d5160 300w,
+                https://i.scdn.co/image/ab67616d0000b27386dfd59ed2e5299c466d5160 320w,
+                https://i.scdn.co/image/ab67616d0000b27386dfd59ed2e5299c466d5160 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Forever Young</h2>
+            <p>Blackpink</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e027f1eacf0b68ba5afd5a7df38"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e027f1eacf0b68ba5afd5a7df38 150w,
+                https://i.scdn.co/image/ab67616d00001e027f1eacf0b68ba5afd5a7df38 300w,
+                https://i.scdn.co/image/ab67616d0000b2737f1eacf0b68ba5afd5a7df38 320w,
+                https://i.scdn.co/image/ab67616d0000b2737f1eacf0b68ba5afd5a7df38 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Haven</h2>
+            <p>Ella Gross</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e02da5d5aeeabacacc1263c0f4b"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e02da5d5aeeabacacc1263c0f4b 150w,
+                https://i.scdn.co/image/ab67616d00001e02da5d5aeeabacacc1263c0f4b 300w,
+                https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b 320w,
+                https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>reputation</h2>
+            <p>Taylor Swift</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e0238aae75dc37fb42457866ffd"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e0238aae75dc37fb42457866ffd 150w,
+                https://i.scdn.co/image/ab67616d00001e0238aae75dc37fb42457866ffd 300w,
+                https://i.scdn.co/image/ab67616d0000b27338aae75dc37fb42457866ffd 320w,
+                https://i.scdn.co/image/ab67616d0000b27338aae75dc37fb42457866ffd 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+
+            <h2>Rockabye</h2>
+            <p>Anne Marie</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="<img
+              aria-hidden="false"
+              draggable="false"
+              loading="lazy"
+              src="https://i.scdn.co/image/ab67616d00001e02838698485511bd9108fadadc"
+              alt=""
+              class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+              srcset="
+                https://i.scdn.co/image/ab67616d00001e02838698485511bd9108fadadc 150w,
+                https://i.scdn.co/image/ab67616d00001e02838698485511bd9108fadadc 300w,
+                https://i.scdn.co/image/ab67616d0000b273838698485511bd9108fadadc 320w,
+                https://i.scdn.co/image/ab67616d0000b273838698485511bd9108fadadc 640w
+              "
+              sizes="(min-width: 1280px) 232px, 192px"
+            />" alt="">
+            <h2>Kiss & Makeup</h2>
+            <p>Dua Lipa</p>
+            <div class="overlay">
+              <img class="logo-overlay" src="Img/logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr />
+
+        <div class="foot">
+          <div class="links">
+            <h4>Company</h4>
+            <ul>
+              <li>About</li>
+              <li>Jobs</li>
+              <li>For the record</li>
+            </ul>
+          </div>
+
+          <div class="links">
+            <h4>Communities</h4>
+            <ul>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Vendors</li>
+              <li>Investors</li>
+            </ul>
+          </div>
+          <div class="links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>Support</li>
+              <li>Free Mobile App</li>
+            </ul>
+          </div>
+          <div class="links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>Premium Individual</li>
+              <li>Premium Duo</li>
+              <li>Premium Family</li>
+              <li>Premium Student</li>
+              <li>Spotify Free</li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="link-pages color">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <p class="copy">&copy; 2025 Spotify AB</p>
+
+        <div class="playbar">
+          <div class="song-info"></div>
+          <div class="play-btns">
+            <img id="previous" class="invert" src="prev.svg" alt="" />
+            <img id="play" class="invert" src="play.svg" alt="" />
+            <img id="next" class="invert" src="next.svg" alt="" />
+          </div>
+          <div class="song-time"></div>
+
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
