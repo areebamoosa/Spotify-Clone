@@ -34,7 +34,7 @@ const playMusic = (track, pause = false) => {
   currentSong.src = "/Songs/" + track;
   if (!pause) {
     currentSong.play();
-    play.src = "pause.svg";
+    play.src = "SVG/pause.svg";
   }
 
   // Clean song name (decode %20 and remove .mp3)
@@ -87,10 +87,10 @@ async function main() {
   play.addEventListener("click", () => {
     if (currentSong.paused) {
       currentSong.play();
-      play.src = "pause.svg";
+      play.src = "SVG/pause.svg";
     } else {
       currentSong.pause();
-      play.src = "play.svg";
+      play.src = "SVG/play.svg";
     }
   });
 
@@ -114,7 +114,7 @@ async function main() {
   previous.addEventListener("click", () => {
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
     if (index - 1 >= 0) {
-      playMusic(songs[index + 1]);
+      playMusic(songs[index - 1]);
     }
   });
 
