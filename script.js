@@ -42,7 +42,7 @@ const playMusic = (track, pause = false) => {
   document.querySelector(".song-info").innerHTML = cleanName;
   document.querySelector(".song-time").innerHTML = "00:00 / 00:00";
 
-  // Show in Now Playing card
+  // Showing in Now Playing card
   document.getElementById("now-playing-card").style.display = "block";
   document.getElementById("song-title").innerText = cleanName;
 };
@@ -83,7 +83,7 @@ async function main() {
     });
   });
 
-  // Attach an event listener to play, next & previous.
+  // Attaching an event listener to play, next & previous.
   play.addEventListener("click", () => {
     if (currentSong.paused) {
       currentSong.play();
@@ -103,14 +103,14 @@ async function main() {
       (currentSong.currentTime / currentSong.duration) * 100 + "%";
   });
 
-  // Add an event listener to seekbar
+  // Adding an event listener to seekbar
   document.querySelector(".seekbar").addEventListener("click", (e) => {
     let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
     document.querySelector(".circle").style.left = percent + "%";
     currentSong.currentTime = (currentSong.duration * percent) / 100;
   });
 
-  // Add an event listener for previous button.
+  // Adding an event listener for previous button.
   previous.addEventListener("click", () => {
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
     if (index - 1 >= 0) {
@@ -118,7 +118,7 @@ async function main() {
     }
   });
 
-  // Add an event listener for next button.
+  // Adding an event listener for next button.
   next.addEventListener("click", () => {
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
     if (index + 1 < songs.length) {
