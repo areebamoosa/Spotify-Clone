@@ -23,3 +23,5 @@ Working on this project helped me strengthen my understanding of JavaScript fund
 ## Note
 
 - Built for desktop — responsiveness not included.
+
+ ### Live Demo: https://areebamoosa.github.io/Spotify-Clone/
